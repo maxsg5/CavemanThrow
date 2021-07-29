@@ -1,0 +1,2 @@
+C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\build\obj\CavemanThrow\x64\Release\filemap.pri
+C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\build\obj\CavemanThrow\x64\Release\filemap.map.txt

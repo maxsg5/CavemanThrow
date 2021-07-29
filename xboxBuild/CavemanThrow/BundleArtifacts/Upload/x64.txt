@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\build\bin\x64\Release\Upload\CavemanThrow_1.0.3.0_x64.appx
+SymbolPackage=C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\build\bin\x64\Release\Upload\CavemanThrow_1.0.3.0\CavemanThrow_1.0.3.0_x64.appxsym

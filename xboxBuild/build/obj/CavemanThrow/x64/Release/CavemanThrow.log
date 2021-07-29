@@ -1,0 +1,12 @@
+﻿  CavemanThrow.vcxproj -> C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\build\bin\x64\Release\CavemanThrow.exe
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\AppxPackage\Microsoft.AppXPackage.Targets(2698,5): warning : Publisher name (CN=FE082D99-7473-49BA-81C2-4C43C4B642C2) does not match signing certificate subject: CN=DefaultCompany. Updating Publisher name.
+GENERATEPROJECTPRIFILE : warning : PRI249: 0xdef00520 - Invalid qualifier: DLL-RESOURCES
+GENERATEPROJECTPRIFILE : warning : PRI249: 0xdef00520 - Invalid qualifier: DLL-RESOURCES
+GENERATEPROJECTPRIFILE : warning : PRI249: 0xdef00520 - Invalid qualifier: DLL-RESOURCES
+GENERATEPROJECTPRIFILE : warning : PRI249: 0xdef00520 - Invalid qualifier: DLL-RESOURCES
+  CavemanThrow -> C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\build\bin\x64\Release\CavemanThrow_1.0.3.0_x64.appx
+  CavemanThrow -> C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\build\obj\CavemanThrow\x64\Release\Symbols\CavemanThrow_1.0.3.0_x64.appxsym
+  CavemanThrow -> C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\build\bin\x64\Release\Upload\CavemanThrow_1.0.3.0\CavemanThrow_1.0.3.0_x64.appxsym
+  CavemanThrow -> C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\AppPackages\CavemanThrow\CavemanThrow_1.0.3.0_Test\CavemanThrow_1.0.3.0_x64.appxbundle
+  CavemanThrow -> C:\Users\Maxsg\Desktop\CavemanThrow\xboxBuild\AppPackages\CavemanThrow\CavemanThrow_1.0.3.0_x64_bundle.appxupload
+  Your package has been successfully created.
