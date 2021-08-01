@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.IO;
+
+
 public class GameManager : MonoBehaviour
 {
     public bool isGameStart = false;
@@ -14,21 +17,30 @@ public class GameManager : MonoBehaviour
     public Text timerText;
     public Text highScoreText;
     public Text countDownTimer;
-    
+    private SavedData savedData;
     //public GameObject restartButton;
     public AudioClip hitSound;
     private AudioSource audioSource;
     public int score = 0;
+    //public int highScore = 0;
+
+    private string filePath = "Assets/savedData.json";
+    
+    
     // Start is called before the first frame update
     void Start()
     {
+        savedData = new SavedData();
+        ReadSavedData();
+       
+        
         countDownTimer.enabled = true;
         startCountDown = true;
         // uncomment to reset high score.
         //PlayerPrefs.SetInt("highScore", score);
         //PlayerPrefs.DeleteAll();
-        PlayerPrefs.SetInt("Score", score);
-        highScoreText.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
+        //PlayerPrefs.SetInt("Score", score);
+        highScoreText.text = "HighScore: " + savedData.HighScore;
         timerText.text = "Time: " + timeRemaining.ToString("0");
         scoreText.text = "Score: " + score.ToString();
         
@@ -67,6 +79,7 @@ public class GameManager : MonoBehaviour
             {
                 // if time is up, then game is over
                 isGameOver = true;
+                WriteSavedData(score);
                 SceneManager.LoadScene("GameOverScreen");
                 
 
@@ -86,11 +99,25 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
         if (score > PlayerPrefs.GetInt("highScore"))
         {
-            PlayerPrefs.SetInt("highScore", score);
+            savedData.HighScore = score;
         }
-        highScoreText.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
+        highScoreText.text = "HighScore: " + savedData.HighScore;
     }
 
+
+     
+    private void ReadSavedData(){
+        savedData = JsonUtility.FromJson<SavedData>(File.ReadAllText(filePath));
+        Debug.Log(savedData.HighScore);
+    }
+
+    private void WriteSavedData(int score){
+        Debug.Log("Writing to file");
+        savedData.HighScore = score;
+        string json = JsonUtility.ToJson(savedData);
+        File.WriteAllText(filePath, JsonUtility.ToJson(savedData));
+        Debug.Log("Writing to file complete");
+    }
     
 
     

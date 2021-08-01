@@ -3484,7 +3484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5604354853489579872, guid: 3b1a1e3653d662d4688c1c6b19c1fb4b, type: 3}
       propertyPath: timeRemaining
-      value: 60
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5604354853489579872, guid: 3b1a1e3653d662d4688c1c6b19c1fb4b, type: 3}
       propertyPath: countDownTimer
