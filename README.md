@@ -1,6 +1,8 @@
 # CavemanThrow
 Unity Game for Desktop and Xbox One
 
+My first 2D unity game I am creating as a portfolio project for my resume. The game is a simple concept where you shoot moving projectiles under a time limit with the goal of trying to get the highest score possible under the given time limit.
+
 To play on PC:
 
 - Navigate to Build folder
